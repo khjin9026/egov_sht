@@ -98,14 +98,14 @@
 									<div class="form-group">
 										<label>소속기관</label> 
 										<input type="text" class="form-control"
-											name="ORGNZT_ID" value="${memberVO.ORGNZT_ID}" >
+											name="ORGNZT_ID" value="ORGNZT_0000000000000" >
 									</div>
 								</div>
 								<div class="col-sm-12">
 									<div class="form-group">
 										<label>휴면계정여부</label> 
 										<input type="text" class="form-control"
-											name="EMPLYR_STTUS_CODE" value="${memberVO.EMPLYR_STTUS_CODE}" >
+											name="EMPLYR_STTUS_CODE" value="P" >
 									</div>
 								</div>
 								
@@ -128,16 +128,7 @@
 					<div class="content"></div>
 					<!-- .content  -->
 				</div>
-				<!-- Control Sidebar -->
-				<aside class="control-sidebar control-sidebar-dark">
-					<!-- Control sidebar content goes here -->
-					<div class="p-3">
-						<h5>Title</h5>
-						<p>Sidebar content</p>
-						<button type="button" class="btn btn-primary btn-lg btn-block">로그아웃</button>
-					</div>
-				</aside>
-				<!-- /.control-sidebar -->
+				
 			</div>
 		</div>
 	</div>
@@ -147,9 +138,14 @@
 <script>
 $(document).ready(function(){
 	$("#EMPLYR_ID").blur(function(){
+		var emplyr_id = $(this).val(); //this = $("#EMPLYR_ID")
+		if(emplyr_id == '') {
+			alert("사용가능한 아이디가 아닙니다");
+			return false; //blur함수 빠져나가기
+		}
 		$.ajax({
-			type:"get",
-			url:"",
+			type:'get',
+			url:'<c:url value="/"/>com/member/restViewMember.do?EMPLYR_ID=' + emplyr_id,
 			success:function(result){
 				if(result == '1') {
 					$("#btn_insert").attr("disabled", true);

@@ -2,13 +2,13 @@
 
 ***
 ### 커스터 마이징 후 파스타 클라우드 활용예정(공통)
-1. 스프링프로젝트 kimilguk_egov 변경 -> kimilguk-egov.
-2. 이클립스에서 kimilguk-egov 프로젝트를 파스타에 배포.(Mysql용)
-3. kimilguk-egov 프로젝트용 클라우드 DB생성: 서비스명은 egov-mysql-db.
+1. 스프링프로젝트 khj_egov 변경 -> khj-egov.
+2. 이클립스에서 khj-egov 프로젝트를 파스타에 배포.(Mysql용)
+3. khj-egov 프로젝트용 클라우드 DB생성: 서비스명은 egov-mysql-db.
 4. 파스타 클라우드에서 egov-mysql-db의 원격접속이름과 암호를 확인.
-5. 이미 생성된 phpmyadmin 애플리케이션명: kimilguk-myadmin 실행.
-6. http://kimilguk-myadmin.paas-ta.org 접속후 전자정부 프로젝트용 더미데이터 인서트.
-7. http://kimilguk-egov.paas-ta.org 사이트에서 파스타 배포결과 확인. 
+5. 이미 생성된 phpmyadmin 애플리케이션명: khj-myadmin 실행.
+6. http://khj-myadmin.paas-ta.org 접속후 전자정부 프로젝트용 더미데이터 인서트.
+7. http://khj-egov.paas-ta.org 사이트에서 파스타 배포결과 확인. 
 ***
 ### 20200820(목) 작업(아래)
 - 3). 진도에 맞춰서 수업진행.
@@ -16,8 +16,8 @@
 - 1). 9월중순 아두이노 작업시 스케치프로그램(언어) 사용 하기전, C언어 미리보기
   구름IDE(온라인)으로 실습.
 ### 20200819(수) 작업(아래)
-- 4). 클라우드 파스타 앱 제거 후, 이클립스 PUSH(???-egovadmin관리용 php앱 이름)
-- 3). 클라우드 파스타 mysql서비스 제거 후, 생성(???-egov-db 서비스 이름)
+- 4). 클라우드 파스타 앱 제거 후, 이클립스 PUSH(khj-egovadmin관리용 php앱 이름)
+- 3). 클라우드 파스타 mysql서비스 제거 후, 생성(khj-egov-db 서비스 이름)
 - 2). 타일즈 템플릿(UI쪽-레이아웃정리) 라이브러리 사용. 전자정부 프로젝트에 적용OK.
 - 1). DB인터페이스 확인 (아래)
 - 실행가능한 소스 https://github.com/miniplugin/Dbinterface_ora_ok.git
